@@ -1,0 +1,14 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  CI:
+    uses: stetind/stem-reusable-workflows/.github/workflows/ci.yaml@chore/kr/ci-configuration
+    secrets:
+      COMPOSER_ACCESS_TOKEN: ${{ secrets.COMPOSER_ACCESS_TOKEN }}

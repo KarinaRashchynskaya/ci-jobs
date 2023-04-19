@@ -2,9 +2,9 @@
 
 namespace Ci\Jobs\Tests;
 
+use Ci\Jobs\PackageProvider;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Stem\DevelopmentStandards\Base\TestCase;
-use Ci\Jobs\PackageProvider;
 
 abstract class BaseTestCase extends TestCase
 {

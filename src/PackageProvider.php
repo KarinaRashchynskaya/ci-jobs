@@ -3,7 +3,6 @@
 namespace Ci\Jobs;
 
 use Ci\Jobs\Permissions\RatingContextPermissions;
-use Illuminate\Support\Facades\Event;
 use Spatie\LaravelPackageTools\Package;
 use Stem\Core\Contracts\Support\BasePackageProvider;
 
@@ -22,5 +21,4 @@ class PackageProvider extends BasePackageProvider
             ->hasMigrations()
             ->runsMigrations();
     }
-
 }

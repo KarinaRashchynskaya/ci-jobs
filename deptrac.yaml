@@ -11,4 +11,4 @@ deptrac:
         - type: className
           regex: ^Stem\\Meta\\.*
         - type: className
-          regex: ^Stem\\Reviews\\Database\\.*
+          regex: ^Ci\\Jobs\\Database\\.*

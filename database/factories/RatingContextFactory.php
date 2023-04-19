@@ -2,8 +2,8 @@
 
 namespace Ci\Jobs\Database\Factories;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Ci\Jobs\Models\RatingContext;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
  * @extends Factory<RatingContext>

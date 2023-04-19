@@ -2,9 +2,8 @@
 
 namespace Ci\Jobs\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Ci\Jobs\Database\Factories\RatingContextFactory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 /**
  * @mixin IdeHelperRatingContext
@@ -21,5 +20,4 @@ class RatingContext extends BaseModel
     {
         return RatingContextFactory::new();
     }
-
 }

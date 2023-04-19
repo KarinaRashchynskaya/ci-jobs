@@ -1,10 +1,10 @@
 <?php
 
+use Ci\Jobs\Models\RatingContext;
+use Ci\Jobs\PackageProvider;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use Ci\Jobs\Models\RatingContext;
-use Ci\Jobs\PackageProvider;
 
 return new class extends Migration {
     protected $connection = PackageProvider::CONNECTION;

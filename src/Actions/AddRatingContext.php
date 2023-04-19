@@ -2,10 +2,10 @@
 
 namespace Ci\Jobs\Actions;
 
+use Ci\Jobs\Models\RatingContext;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rules\Unique;
 use JetBrains\PhpStorm\ArrayShape;
-use Ci\Jobs\Models\RatingContext;
 
 /**
  * Add a rating context.

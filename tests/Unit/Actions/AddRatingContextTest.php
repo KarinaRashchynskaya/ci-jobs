@@ -2,11 +2,11 @@
 
 namespace Actions;
 
-use Illuminate\Validation\ValidationException;
-
 use Ci\Jobs\Actions\AddRatingContext;
+
 use Ci\Jobs\Models\RatingContext;
 use Ci\Jobs\Tests\BaseTestCase;
+use Illuminate\Validation\ValidationException;
 
 class AddRatingContextTest extends BaseTestCase
 {

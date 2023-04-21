@@ -1,0 +1,14 @@
+imports:
+  - ./vendor/stem/dev-standards/deptrac.baseline.yaml
+
+deptrac:
+  layers:
+    # Add package-specific dependencies to the `Allowed` layer.
+    - name: Allowed
+      collectors:
+        - type: className
+          regex: ^Stem\\Core\\.*
+        - type: className
+          regex: ^Stem\\Meta\\.*
+        - type: className
+          regex: ^Ci\\Jobs\\Database\\.*

@@ -5,14 +5,12 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
-    types: [synchronize, ready_for_review]
   workflow_dispatch:
 
 
 jobs:
   CI:
-    if: '! github.event.pull_request.draft'
-    uses: stetind/stem-reusable-workflows/.github/workflows/ci.yaml@main
+    uses: stetind/stem-reusable-workflows/.github/workflows/ci.yaml@chore/kr/ci-configuration
     secrets:
       COMPOSER_ACCESS_TOKEN: ${{ secrets.COMPOSER_ACCESS_TOKEN }}
 
